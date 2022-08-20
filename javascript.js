@@ -1,8 +1,8 @@
-let age = 18;
-if(age > 18){
-    console.log("Ele é maior de idade!");
-}else if(age == 18){
-    console.log("Ele tem esatamente 18 anos");
-}else{
-    console.log("Ele é menor de idade");
-}
+
+let somaArrow = (x, y) => {
+    return x / y;
+};
+console.log(somaArrow(8, 2));
+
+let somaArrow2 = (y, x) => y + x;
+console.log(somaArrow2(9,23));
