@@ -1,16 +1,29 @@
-let pesso1={
-    nome: 'ze alves'
+let pessoa = {
+    nome : "Ze neto",
+    idade : 38,
+    cc : 213
 };
 
-let pesso2={
-    nome: "gana",
-    idade: 23,
-    status: false,
-    array: ["profissional", "hacker", "loja"],
-    work: function (){
-        alert("work");
+let operation = { 
+    sacar: function(saldo, valor){
+        return saldo -= valor;
     },
-    support: pesso1
+
+    depositar: function(saldo,valor){
+        return saldo += valor;
+    }
 };
 
-console.log (pesso1.nome);
+let banco = {
+    pessoa: pessoa,
+    operation: operation,
+    saldo: 80
+};
+
+let velue=40;
+console.log(banco.pessoa.nome + " O dono da conta " + banco.pessoa.cc +" realizou um saque no valor " + velue + " ficando com "+
+banco.operation.sacar(banco.saldo, velue));
+
+
+let valor=34;
+console.log(banco.pessoa.name + " Portador da conta " + banco.pessoa.cc + " realizou um deposito com o valor " + valor + " ficando com " + banco.operation.depositar(banco.saldo, valor));
